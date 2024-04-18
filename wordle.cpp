@@ -60,7 +60,7 @@ void complete(std::set<std::string>& words,
             for (size_t i = 0; i < 26; i++) {
                 string x(1, 'a' + i);
                 string newWord(in);
-                newWord[temp] = x;
+                newWord[temp] = x[0];
                 complete(words, newWord, floating, dict);
             }
         }
